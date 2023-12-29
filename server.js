@@ -10,7 +10,7 @@ app.use(cors({origin: "*"}))
 const server = http.createServer(app)
 
 const wss = new WebSocket.Server(server, {
-    maxHttpBufferSize: 20000 * 1024, // 20MB
+    maxHttpBufferSize: 20000000 * 1024, // 20000MB
     cors: {
         origin: "*",
         methods: ["GET", "POST"],
