@@ -12,7 +12,7 @@ const server = http.createServer(app)
 const wss = new WebSocket.Server(server, {
     maxHttpBufferSize: 20000000 * 1024, // 20000MB
     cors: {
-        origin: "*",
+        origin: "https://lifechat-api-server.vercel.app",
         methods: ["GET", "POST"],
     },
 });
